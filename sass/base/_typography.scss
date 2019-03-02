@@ -1,0 +1,164 @@
+.heading-primary {
+  color: $color-white;
+  text-transform: uppercase;
+  margin-bottom: 6rem;
+
+  &--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 300;
+    letter-spacing: 1.5rem;
+
+    animation-name: moveInLeft;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in;
+
+    @include respond(phone) {
+      letter-spacing: 1rem;
+      font-size: 4rem;
+    }
+  }
+
+  &--sub {
+    text-align: center;
+    display: block;
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: .8rem;
+
+    animation-name: moveInRight;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in;
+
+    @include respond(phone) {
+      letter-spacing: .5rem;
+    }
+  }
+}
+
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $color-grey-dark-2;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+  color: $color-grey-dark;
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
+
+.pretty-words {
+  font-size: 6.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  // margin-left: 1.5rem;
+  margin-right: 4rem;
+
+  @include respond(phone) {
+    letter-spacing: 1rem;
+    font-size: 3rem;
+    margin: -1rem;
+    padding-top: 5rem;
+  }
+
+  @include respond(tab-port) {
+    letter-spacing: 1rem;
+    font-size: 3rem;
+    margin: -1rem;
+    padding-top: 9rem;
+  }
+}
+
+.word {
+  color: $color-primary-light;
+  background-color: $color-grey-dark-2;
+  margin-top: 2rem;
+  transform: rotate(-10deg);
+  position: relative;
+  left: 0;
+  top: -2rem;
+  box-shadow: 0 .5rem 1rem rgba($color-black, .5);
+  margin-bottom: 5rem;
+
+  @include respond(phone) {
+    letter-spacing: 1rem;
+    font-size: 5rem;
+    width: 95%;
+    top: 0;
+    margin-top: -6rem;
+  }
+
+  @include respond(tab-port) {
+    margin-bottom: 8rem;
+    width: 80%;
+    margin-top: -6rem;
+  }
+
+  @include respond(tab-land) {
+    width: 105%;
+  }
+}
+
+.heading-secondary {
+  width: 40%;
+  font-size: 7rem;
+  text-transform: uppercase;
+  font-weight: 385;
+  color: $color-white;
+  margin-bottom: 8rem;
+  background-color: $color-grey-dark-2;
+  transform: rotateZ(5deg);
+  overflow: hidden;
+
+  @include respond(tab-land) {
+    font-size: 5rem;
+    margin-left: 1.5rem;
+    width: 50%
+  }
+
+  @include respond(tab-port) {
+    font-size: 5rem;
+    margin-left: 1.5rem;
+  }
+
+  @include respond(phone) {
+    font-size: 3rem;
+    width: 60%;
+    margin-left: 1.5rem;
+  }
+
+  &__sub {
+    font-size: 1.5rem;
+    display: block;
+    margin-bottom: 2rem;
+    margin-top: -2rem;
+
+    @include respond(phone) {
+      margin-top: .5rem;
+      visibility: hidden;
+      margin-bottom: -2rem;
+    }
+
+    @include respond(tab-port) {
+      margin-top: .5rem;
+      visibility: hidden;
+      margin-bottom: -2rem;
+    }
+
+    @include respond(tab-land) {
+      margin-top: .5rem;
+      visibility: hidden;
+      margin-bottom: -2rem;
+    }
+  }
+}
+
+.footer__copyright {
+  color: $color-grey-light-1
+}

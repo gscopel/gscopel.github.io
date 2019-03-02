@@ -1,0 +1,47 @@
+.btn {
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 2rem;
+    display: inline-block;
+    border-radius: .5rem;
+    transition: all .2s;
+    position: relative;
+    font-size: 1.2rem;
+  }
+
+  &:hover {
+    transform: translateY(-.3rem);
+    box-shadow: 0 .5rem 1rem rgba($color-black, .1)
+  }
+
+  &:active {
+    transform: translateY(-.1rem);
+  }
+
+  &--white {
+    color: #ffffff;
+    background-color: rgba($color-white, .3);
+    border: .1rem solid $color-white;
+  }
+
+  &--cta {
+    background-color: white;
+    margin-right: .3rem;
+
+    @include respond(tab-land) {
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+
+    @include respond(tab-port) {
+      margin-bottom: 4rem;
+    }
+
+    &:hover {
+      background-color: $color-grey-dark-2;
+      color: $color-white;
+    }
+  }
+}
