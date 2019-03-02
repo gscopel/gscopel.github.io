@@ -1,0 +1,31 @@
+.section-about {
+  background-color: $color-grey-light-1;
+  padding: 16.5rem 0;
+  margin-top: -8.5rem;
+
+  @include respond(tab-port) {
+    padding: 12.5rem 0;
+  }
+}
+
+.section-projects {
+  // background-image: linear-gradient(
+  //   to left top,
+  //   rgba($color-primary-light, 0.62),
+  //   rgba($color-primary-dark, 0.62));
+
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.52),
+      rgba($color-primary-dark, 0.52)),
+      url(../img/paint.jpg);
+
+      background-repeat: no-repeat;
+      background-size: cover;
+
+  padding: 15rem 0 20rem 0;
+
+  @include respond(tab-port) {
+    padding: 12.5rem 0 10rem 0;
+  }
+}
