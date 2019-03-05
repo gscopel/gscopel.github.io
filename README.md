@@ -1,4 +1,3 @@
-# gscopel.github.io - Personal Website
 # What I learned
 
 • SASS and SCSS advanced architecture.
