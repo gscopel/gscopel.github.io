@@ -129,8 +129,10 @@
 
   @include respond(phone) {
     font-size: 3rem;
+    height: 8rem;
     width: 60%;
     margin-left: 1.5rem;
+    padding-top: 1.3rem;
   }
 
   &__sub {

@@ -156,8 +156,10 @@ body {
   @media (max-width: 37.5em) {
     .heading-secondary {
       font-size: 3rem;
+      height: 8rem;
       width: 60%;
-      margin-left: 1.5rem; } }
+      margin-left: 1.5rem;
+      padding-top: 1.3rem; } }
   .heading-secondary__sub {
     font-size: 1.5rem;
     display: block;
@@ -213,7 +215,7 @@ body {
 
 .btn--white {
   color: #ffffff;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
   border: 0.1rem solid #ffffff; }
 
 .btn--cta {
@@ -464,9 +466,6 @@ body {
   @media (min-resolution: 192dpi) and (min-width: 600px), (min-width: 2000px) {
     .header {
       background-image: linear-gradient(to right bottom, rgba(246, 171, 241, 0.72), rgba(176, 0, 164, 0.72)), url(../img/hero.jpg); } }
-  @media (max-width: 350px) {
-    .header {
-      background-image: linear-gradient(to right bottom, rgba(246, 171, 241, 0.72), rgba(176, 0, 164, 0.72)); } }
   .header__logo-box {
     position: absolute;
     top: 4rem;
